@@ -1,0 +1,21 @@
+{
+  "name": "gyan-yudh",
+  "version": "1.0.0",
+  "description": "Gamified Learning Platform for B.Tech Students",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "server": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "seed": "cd backend && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
